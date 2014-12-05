@@ -1,0 +1,452 @@
+body{
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+  min-width: 960px;
+  background-color: rgb(229,229,229);
+  
+}
+
+section{
+  min-width: 960px;
+}
+
+
+#contenedorPrincipal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#logo1{
+position: relative;
+height: 35%;
+top: 25%;
+width: 30%;
+left: 35%;
+background-image: url('../img/logo.png');
+background-size: 100% 80%;
+background-repeat: no-repeat;
+
+}
+#logo1  button {
+ position: relative;
+top: 110%;
+left: 40%;
+background-color: transparent;
+border: 1px solid #FFF;
+border-radius: 3px;
+color: white;
+width: 83px;
+height: 34px;
+font-size: 17px;
+}
+#logo1  button:hover {
+cursor: pointer;
+background-color: rgba(0,0,0,0.5);
+
+}
+
+#contenedorPrincipal section {
+	position: relative;
+	max-width: inherit;
+	height: 100%;
+	}
+.contenedorSeccion{
+	height: 82%;
+  position: relative;
+}
+#portada{
+	background-size: cover;
+	background-image: url("../img/bb.jpg");
+	
+}
+#work{
+  position: relative;
+  height: 100%;
+			}
+
+#InteligenciaArtificial{
+  background-position: 50%;
+  color: #fff;
+  background-size: cover;
+background-image: url("../images/portadas/7.jpg")
+}
+
+#InteligenciaArtificial h1{
+  color: #FFF;
+
+}
+
+.content{
+   -webkit-column-count: 3;
+  -webkit-column-gap:   20px;  
+  -moz-column-count:    3;
+  -moz-column-gap:      20px;
+  column-count:         3;
+  column-gap:           20px;
+
+
+position: relative;
+
+height: 100%;
+background-color: rgba(0,0,0,0.64);
+}
+
+.content p{
+  text-align: justify;
+  margin-left: 10px;
+  font-size: 18px;
+  margin: 10px;
+}
+
+#RedesySeguridad h1{
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.64);
+}
+
+
+#storyContainer{
+  position: relative;
+  width: 100%; 
+  height: 100%;
+
+}
+#left, #right{
+  position: relative;
+  width: 50%;
+}
+#left{
+  float: left;
+
+}
+#right{
+  float: right;
+}
+#logo{
+	height: 23%
+}
+li img{
+width: 99px;
+position: relative;
+margin: 0 auto;
+}
+h1{
+
+position: relative;
+color: #000;
+font-size: 65px;
+font-weight: 300;
+
+text-align: center;
+line-height: 1.5;
+}
+
+#mainTitle{
+  background: rgba(0, 0, 0, 0.7);
+  color:#fff;
+}
+h2{
+color: rgb(30, 144, 255);
+font-size: 23px;
+font-weight: 400;
+}
+
+#work {
+  
+ 
+  color: rgba(241,241,241,1);
+  float: left;
+  width: 100%;
+}
+
+#layer1, #layer2 {
+   position: relative;
+  height: 100%;
+   float: left;
+}
+
+#layer1{
+ width: 850px;
+position: absolute;
+margin: 0 auto;
+left: 31;
+
+}
+#layer2 {
+ width: 452px;
+float: right;
+text-align: center;
+}
+
+#mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#portalienzo,  #comandos {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+#comandos_{
+  position: relative;
+  width: 200%;
+}
+
+#portalienzo { height: 65%;}
+#zona3d, #tarjetasLateral{position: relative; height: 50%; width: 432px;}
+#tarjetasLateral {height: 324;}
+#comandos {height: 35%;
+overflow-x:scroll; overflow-y:hidden;}
+
+.card {
+left: 1%;
+
+top: 2%;
+max-height: 93%;
+/* margin: 10px; */
+border-radius: 2px;
+color: rgb(150, 160, 170);
+box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+
+background-color: white;
+}
+
+.little {
+  height: 185;
+  margin: 8px;
+  width: 154px;
+  float: left;
+  top: 26px;
+  cursor: pointer;
+  position: relative;
+}
+
+.little:hover {
+  background-color: dodgerblue;
+}
+#comandos li {
+
+  display: inline;
+width: 150px;
+height: 190px;
+position: relative;
+}
+
+#graph {
+  text-align: left;
+height: 80%;
+top: 9%;
+position: relative;
+padding: 30 10 10 10;
+font-size: 15px;
+}
+
+#graph strong, #graph span {
+  margin: 10px;
+}
+
+#graph button {
+  border: none;
+border-radius: 2px;
+width: 112px;
+height: 27;
+background: rgb(30, 144, 255);
+margin: 10px;
+color: rgb(255, 255, 255);
+}
+
+#graph button:hover {
+  cursor: pointer;
+  box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+canvas {
+  position: relative;
+ 
+  border-radius: 2px;
+}
+
+#td-canvas {
+  width: 100%;
+  height: 340px;
+}
+
+#zoom {
+  display: none;  
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  background-color: rgba(0,0,0,0.55);
+  z-index: 20;
+  border: 1px solid rgba(129,129,129,0.5);
+  cursor: move;
+}
+#svg-image-blur { 
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+   width: 100%; 
+   filter:url(#blur-effect-1);
+ }
+
+
+
+#svg-image:hover { filter:url(#blur-effect-1); }
+
+#imgtmp {
+  visibility: hidden;
+  position: fixed;
+}
+
+.thumbnail canvas {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.title {
+  font-size: 17px;
+  color: rgb(51,51,51);
+  margin: 10px; 
+}
+
+input[type="file"]
+{
+  position: relative;
+  max-width: 100%;
+  border:none;
+  display: none;  
+}
+
+.no-hover:hover{
+  background-color: white;
+}
+
+#up{
+height: 89;
+background-image: url('../img/up.png');
+background-size: 66px;
+background-repeat: no-repeat;
+background-position: 47 17;
+cursor: pointer;
+}
+
+
+#down{
+height: 89px;
+background-image: url('../img/up.png');
+background-size: 66px;
+background-repeat: no-repeat;
+background-position: 41 16;
+-webkit-transform:rotate(180deg);
+}
+
+#up:hover {
+  background-color: dodgerblue;
+}
+
+#down:hover {
+  background-color: dodgerblue;
+}
+.card > span {
+  margin: 10px;
+}
+
+#tmp-canvas, #mini-canvas{
+  display: none;
+}
+
+#overlay {
+display: none;
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.85);
+z-index: 100;
+
+}
+
+#gallery {
+
+position: relative;
+width: 64%;
+
+left: 18%;
+}
+
+#imagenActual{
+top: -48px;
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+#prev, #next{
+  z-index: 50;
+  cursor: pointer;
+  position: relative;
+
+width: 29;
+height: 48;
+top: 299;
+border: none;
+background: rgba(0, 50, 0, 0);
+}
+
+#prev{
+  float: left;
+  background-image: url('../img/ff.png');
+background-repeat: no-repeat;
+background-size: auto;
+background-position: 0 -25px;
+}
+
+#next {
+  float: right;
+  background-image: url('../img/ff.png');
+background-repeat: no-repeat;
+background-size: auto;
+background-position: -28px -25px;
+}
+
+#prev:hover {
+
+  background-color: rgba(31,31,31,0.5);
+  }
+
+#next:hover {
+  background-color: rgba(31,31,31,0.5);
+}
+
+#cerrar {
+  position: fixed;
+float: right;
+top: -1;
+z-index: 50;
+border: none;
+background: rgb(97, 97, 97);
+color: rgb(255, 255, 255);
+width: 56;
+}
+#graph p {
+  margin: 10px;
+}
+
+#infoContainer {
+  position: relative;
+width: 100%;
+height: 171px;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+
+#DoG{
+  display: none;
+}
+
+#DoG canvas {
+  width: 300px;
+
+}

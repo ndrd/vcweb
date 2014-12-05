@@ -1,0 +1,161 @@
+<html>
+<body>
+	<title>Proyecto f.u.c.k</title>
+	<head></head>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/js/StackBlur.js"></script>
+		<script type="text/javascript" src="assets/js/data.js"></script>
+	<script type="text/javascript" src="assets/js/Fuk.js"></script>
+	<script type="text/javascript" src="assets/js/core.js"></script>
+	<script type="text/javascript" src="assets/js/gallery.js"></script>
+
+
+	<article id="contenedorPrincipal">
+		<section id="portada">
+			<div id="logo1">
+				<a href="#work"><button>Go!</button></a>
+			</div>
+
+		</section>
+	</article>
+
+	<article id="overlay">
+		<button id="cerrar">Cerrar</button>
+		<button id="prev"></button>
+		<button id="next"></button>
+		<div id="gallery">
+			<img id="imagenActual"/>
+		</div>
+	</article>
+	<article id="work">
+
+	<canvas id="tmp-canvas"></canvas>
+	<div id="DoG">
+		<div id="ksigma">
+			<canvas id="g1"></canvas>
+			<canvas id="g2"></canvas>
+			<canvas id="g3"></canvas>
+			<canvas id="g4"></canvas>
+		</div>
+
+		<div id="DooG">
+			<canvas id="dog1"></canvas>
+			<canvas id="dog2"></canvas>
+			<canvas id="dog3"></canvas>
+		</div>
+	</div>
+	<canvas id="mini-canvas" ></canvas>
+		<div id="layer1">
+		<img id="imgtmp"/>
+			<div id="portaLienzo" class="big card">
+			<div id="mask"></div>
+				<div id="zoom"></div>
+				
+				<canvas id="lienzo"></canvas>
+			</div>
+			<div id="comandos">
+				<div id ="comandos_">
+				<div class="little card no-hover" >
+					<label for="pic" ><div id="up"><input type="file" id="pic" accept="image/*"></div></label>
+					<a id="downloadUrl" target="_blank" ><div id="down"></div></a>
+
+
+				</div>
+				
+
+
+				</div>
+				
+				
+			</div>
+		</div>
+		<div id="layer2">
+			<div id="zona3d" class="medium card">
+				<canvas id="td-canvas"></canvas>
+				<span id="modo"></span>
+			</div>
+			<div id="tarjetasLateral">
+				<div id="graph" class="card">
+					<h2 id="title">Titulo</h2>
+					<div id="infoContainer">
+					<p><strong class="tag">descripcion</strong><span class="info" id="description"></span></p>
+					<p><strong class="tag">dificultad</strong><span class="info" id="dif"></span></p>
+					<p><strong class="tag">web</strong><span class="info"><a id="web"></a></span></p>
+					<p><strong class="tag">#</strong><span class="info" id="tags"></span></p>
+					
+					
+					</div>
+					<button id="detalles">Ver más</button><button id="apply">Aplicar</button><button id="restore">Restaurar</button>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+</body>
+</html>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  load();	
+  console.log("done")
+});
+
+$(document).on("keydown", function(e){
+	console.log(e.keyCode);
+
+	switch(e.keyCode) {
+		case 37:
+			slideAnterior();
+			break;
+		case 39:
+			slideSiguiente();
+			break;
+		case 27:
+			$("#overlay").hide();
+	}
+
+});
+
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+	    console.log(e);
+	    var target = this.hash;
+	    console.log(target);
+	    var d =0;
+	    
+		  if(target.slice(0,2) == "#_"){
+		  	console.log("hola");
+	    	$("#overlay").show();
+	    }
+	    if(target == "#Nosotros"){
+	    	//alert("Correr nyan")
+	    	$("#nyan").show();
+	    	$("#nyan").animate({
+   
+    left: "+=80%",
+    }, 7000, function() {
+    $("#nyan").hide();
+    $("#nyan").css('left','0%')
+  });
+	    }
+
+	    
+	    console.log(target);
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-d
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+
+
+});
+</script>

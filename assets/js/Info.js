@@ -1,0 +1,9 @@
+var Info = {};
+Info.nombre = "#name";
+Info.descripcion = "hermosa descripcion breve";
+Info.complejidad = "5";
+Info.index = 1;
+Info.tags  = [];
+Info.tags[0] = "Polinomios";
+Info.slidesURI = [];
+Info.slidesURI[0] = "assets/img/slides/#name/#i.jpg"

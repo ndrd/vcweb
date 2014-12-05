@@ -1,0 +1,100 @@
+var data  = [
+	{
+	"nombre":"Normal",
+	"url":"",
+	"d":"ooooo",
+	"complejidad":"0",
+	"index":0,
+	"tags":["sin informacion "],
+	"slidesURI":["assets/img/slides/intro/1.png",
+			"assets/img/slides/intro/2.png",
+			"assets/img/slides/intro/3.png",
+			"assets/img/slides/intro/4.png",
+			"assets/img/slides/intro/5.png"]
+	},
+
+	{
+	"nombre":"Gaussiano",
+	"d":"ooooo",
+	"url":"http://es.wikipedia.org/wiki/Funci%C3%B3n_gaussiana",
+	"complejidad":"2",
+	"index":1,
+	"tags":["Funcion Gaussiana","convolución"],
+	"slidesURI":["assets/img/slides/gauss/1.png",
+			"assets/img/slides/gauss/2.png",
+			"assets/img/slides/gauss/3.png",
+			"assets/img/slides/gauss/4.png",
+			"assets/img/slides/gauss/5.png"]
+	},
+
+	{
+	"nombre":"Sobel Horizontal",
+	"d":"ooooo",
+	"url":"http://es.wikipedia.org/wiki/Operador_Sobel",
+	"complejidad":"2",
+	"index":2,
+	"tags":["Polinomios"],
+	"slidesURI":["assets/img/slides/sobel/1.png",
+			"assets/img/slides/sobel/2.png",
+			"assets/img/slides/sobel/3.png",
+			"assets/img/slides/sobel/4.png",
+			"assets/img/slides/sobel/5.png"]
+	},
+
+	{
+	"nombre":"Sobel Vertical",
+	"d":"ooooo",
+	"url":"http://es.wikipedia.org/wiki/Operador_Sobel",
+	
+	"complejidad":"2",
+
+	"index":3,
+	"tags":["gradiente","sobel","bordes"],
+	"slidesURI":["assets/img/slides/sobel/1.png",
+			"assets/img/slides/sobel/2.png",
+			"assets/img/slides/sobel/3.png",
+			"assets/img/slides/sobel/4.png",
+			"assets/img/slides/sobel/5.png"]
+	},
+
+	{
+	"nombre":"SIFT",
+	"d":"ooooo",
+	"url":"http://en.wikipedia.org/wiki/Scale-invariant_feature_transform",
+
+	"complejidad":"8",
+	"index":4,
+	"tags":["kernel, convolución"],
+	"slidesURI":["assets/img/slides/convolución/1.png"]
+	},
+
+	{
+	"nombre":"Convolución [Kernel propio]",
+	"url":"http://es.wikipedia.org/wiki/Convoluci%C3%B3n",
+	"d":"ooooo",
+	"complejidad":"5",
+	"index":5,
+	"tags":["kernel, convolución"],
+	"slidesURI":["assets/img/slides/convolución/1.png"]
+	},
+
+	{
+	"nombre":"Convolución [Kernel propio]",
+	"url":"http://es.wikipedia.org/wiki/Convoluci%C3%B3n",
+	"d":"ooooo",
+	"complejidad":"5",
+	"index":6,
+	"tags":["kernel, convolución"],
+	"slidesURI":["assets/img/slides/convolución/1.png"]
+	},
+
+	{
+	"nombre":"Convolución [Kernel propio]",
+	"url":"http://es.wikipedia.org/wiki/Convoluci%C3%B3n",
+	"d":"ooooo",
+	"complejidad":"5",
+	"index":7,
+	"tags":["kernel, convolución"],
+	"slidesURI":["assets/img/slides/convolución/1.png"]
+	}
+	]

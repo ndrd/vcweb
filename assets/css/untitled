@@ -1,0 +1,55 @@
+Fuk.filtros.puntosInteres  = function(main, up, down) {
+ /* calculamos las proposciones de la matriz de convolucion */
+  kernel = [1,1,1,
+            1,1,1,
+            1,1,1];
+
+  var points = [];
+
+  var lado = Math.round(Math.sqrt(kernel.length));
+  var medioLado = Math.floor(lado/2);
+  var origen = main.data;
+  var mayor = up.data;
+  var menor = down.data;
+  var sancho = main.width;
+  var salto = main.height;
+  // creamos una nueva canvas con las mismas dimensiones 
+  var w = sancho;
+  var h = salto;
+  var salida = d.createImageData(w,h);
+  var destino = salida.data;
+  
+  for (var y=0; y<h; y++) {
+    for (var x=0; x<w; x++) {
+      var sy = y;
+      var sx = x;
+      var dindex = ( y * w + x)*4;
+
+      //suponemos que las imagenes ya vienen en escala de grises
+      var px = origen[dindex];
+      var maximo = true, minimo = true;
+      //sumamos el peso de los pixeles bajo la matriz de convolucion
+      var r=0, g=0, b=0, a=0;
+      for (var cy=0; cy<lado; cy++) {
+        for (var cx=0; cx<lado; cx++) {
+          var dy = sy + cy - medioLado;
+          var dx = sx + cx - medioLado;
+          if (dy >= 0 && dy < salto && dx >= 0 && dx < sancho) {
+            var findex = (dy * sancho + dx) * 4;
+            var pxUp = mayor[findex];
+            var pxDown = menor[findex];
+           
+            maximo &= (px > pxDown && px > pxUp);
+            minimo &= (px < pxDown && px < pxUp);
+
+          }
+        }
+      }
+
+      if(maximo | minimo)
+        points.push([x,y]);
+
+    }
+  }
+  return points;
+};

@@ -1,0 +1,549 @@
+**
+FLAG CONTAINER
+****************************/
+
+#flagContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.flag{
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+  
+
+}
+.flag:hover{
+  cursor: pointer;
+  background-color: #FF00FF;
+  box-shadow: 2px 2px 5px #aaa;
+  animation:mymove 1s;
+  -webkit-animation:mymove 1s;
+  top:-25px;
+}
+
+.colorFlag{
+  text-align: center;
+  position: relative;
+  height: 25%;
+  top: 75%;
+}
+
+.rojo{
+  background-color: rgb(255,17,17);
+}
+.verde{
+  background-color: rgb(0,255,204);
+}
+.azul{
+  background-color: rgb(0,176,240);
+}
+.amarillo{
+  background-color: rgb(255,255,0);
+}
+.morado{
+ background-color: rgb(61,241,31);
+}
+
+#_g1 div,.rojo{
+  background-color: rgba(255,17,17,.83);
+}
+#_g2 div,.verde{
+  background-color: rgba(61,241,31,.83);
+}
+#_g3 div,.azul{
+  background-color: rgba(0,176,240,.83);
+}
+#_g4 div,.amarillo{
+  background-color: rgba(31, 16, 209, 0.83);
+}
+#_g5 div,.morado{
+ 
+  background-color: rgba(255, 60, 0, 0.85);
+}
+
+
+
+.flagNumber{
+  position: relative;
+  top: 18%;
+  font-size: 80px;
+  color: #FFF;
+}
+
+
+.infoGeneracion{
+  display: none;
+  position: absolute;
+}
+
+
+#Generacion1{
+  background-image: url("../images/generaciones/1.jpg");
+  background-size: cover;
+}
+
+#Generacion2{
+  background-image: url("../images/generaciones/2.jpg");
+  background-size: cover;
+}
+#Generacion3{
+  background-image: url("../images/generaciones/3.jpg");
+  background-size: cover;
+}
+#Generacion4{
+  background-image: url("../images/generaciones/4.jpg");
+  background-size: cover;
+}
+#Generacion5{
+  background-image: url("../images/generaciones/5.jpg");
+  background-size: cover;
+}
+
+#data li[id]:target { 
+  width: 100%; 
+  height: 100%;
+   opacity: 1;
+    z-index: 10; 
+    position: fixed; 
+    overflow-x: hidden;  }
+/*******************************/
+
+/**********************/
+
+.tileContainer{
+	position: relative;
+	height: 630px;
+	width: 706px;
+	padding: 1em;
+
+	top: 40px;
+	margin: 0 auto;
+}
+
+.tileContainer li{
+	width: 100%;
+}
+
+
+
+.tile{
+  overflow: hidden;
+  background-color: #333;
+  background-size: cover;
+  background-position: 50% 0%;
+background-image: url(http://c2.cdn.truelife.vn/webtube/201303/2082649.jpg?f=3uRzFdhvI1TYFVcVftyGmw==);
+}
+.big, .tilesContainer{
+height: 50%;
+position: relative;
+}
+.big{
+  width: 99%;
+}
+.tilesContainer{
+  width: 100%
+}
+
+.little{
+  width: 32%;
+height: 100%;
+float: left;
+}
+#b .little{
+margin: 3px;
+}
+
+#a .little{
+  margin-right: 5px;
+margin-top: -4px;
+}
+.tile:hover{
+  cursor: pointer;
+  animation:images 1s;
+  -webkit-animation:images 1s;
+  background-position:60% 10%;
+}
+.tile > span{
+padding: 1%;
+width: 100%;
+width: 100%;
+position: relative;
+height: 20%;
+display: inline-block;
+bottom: -80%;
+font-size: 15px;
+text-align: justify;
+color: #FFF;
+background-color: rgba(0, 0, 0, 0.64);
+}
+
+/*fondos para las imagenes*/
+#h1{
+  background-image: url('../images/historiacomputacion/1.jpg')
+}
+#h2{
+  background-image: url('../images/historiacomputacion/2.jpg')
+}
+#h3{
+  background-image: url('../images/historiacomputacion/3.jpg')
+}
+#h4{
+  background-image: url('../images/historiacomputacion/4.jpg')
+}
+#h5{
+  background-image: url('../images/historiacomputacion/5.jpg')
+}
+#h6{
+  background-image: url('../images/historiacomputacion/6.jpg')
+}
+#h7{
+  background-image: url('../images/historiacomputacion/7.jpg')
+}
+#h8{
+  background-image: url('../images/historiacomputacion/8.jpg')
+}
+
+
+
+
+/***
+  estilos para lenguajes de programacion
+
+
+*/
+
+#lenguajesDeProgramacion{
+  
+   /* background: url(../images/portadas/code.jpg);*/
+
+}
+.active{
+  color: orangered;
+}
+.con{
+overflow-y: scroll;
+height: 79%;
+padding: 5px;
+display: block;
+font-size: 15px;
+color: #000;
+text-shadow: none;
+background: transparent;
+width: 93%;
+line-height: 1.5;
+border-radius: 3px;
+}
+#controlTime{
+  overflow-x:scroll;
+  overflow-y:hidden;
+  width: 100%;
+  position: relative;
+}
+
+#timeLine{
+  position: relative;
+  width: 200%;
+}
+
+.decada{
+  overflow: hidden;
+position: relative;
+float: left;
+margin: 6px;
+height: 97%;
+width: 16%;
+box-shadow: 2px 2px 5px #333;
+}
+.decada> li{
+  position: relative;
+ position: relative;
+margin: 3px;
+list-style: none;
+color: orangered;
+font-size: 23px;
+
+}
+.decada li:hover{
+  cursor: pointer;
+}
+.decada li span{
+  display: block;
+  margin: 5px;
+}
+
+.decada >span{
+ display: block;
+text-shadow: 1px 2px 2px #333;
+color: #FFF;
+font-size: 65px;
+text-align: center;
+}
+#Nosotros h1{
+  color: orangered;
+}
+
+#nyan{
+top: 29%;
+position: absolute;
+width: 253px;
+height: 167px;
+background-image: url("../images/nyan/original.gif");
+}
+/*****/
+/*
+#b .little {
+-webkit-transform: skew(-3deg);
+-moz-transform: skew(-3deg);
+transform: skew(-3deg);
+}
+
+#a .little {
+-webkit-transform: skew(3deg);
+-moz-transform: skew(3deg);
+transform: skew(3deg);
+}
+
+#top{
+  background-image: url('..images/historiacomputacion/maquinapascal.jpg')
+}
+
+#bot{
+  top: 5px;
+  -webkit-transform: skew(-3deg);
+-moz-transform: skew(-3deg);
+transform: skew(-3deg);
+}*/
+.titleBack{
+	position: relative;
+	background: rgba(0,0,0,.8);
+	margin-left: -2px;
+	top: 88%;
+	height:37px;
+	overflow: hidden;
+}
+
+.titleBack > span{
+	margin-left: 10px;
+	font-weight: 300;
+	font-size: 26px;
+	color: #fff;
+}
+.lt{
+	top:77%;
+	width: 229px;
+
+}
+.lg{
+	top: 89%;
+	width:464px;
+}
+
+
+
+@keyframes mymove
+{
+from {top:0;}
+  to {top:-25px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+	from {top:0;}
+	to {top:-25px;}
+}
+
+@keyframes images
+{
+from {background-position:50% 0%; }
+  to {background-position:60% 10%;}
+}
+
+@-webkit-keyframes images /* Safari and Chrome */
+{
+ from {background-position:50% 0%; }
+  to {background-position:60% 10%;}
+}
+/*
+@-webkit-keyframes test {
+  0%{
+  	 background-image: url("../images/portadas/code.jpg");
+  }
+   25% {
+   background-image: ;
+  }
+  50% {
+   background-image: url("../images/portadas/datacenter.jpg");
+  }
+   75% {
+   background-image: url("../images/portadas/code.jpg");
+  }
+  100% {
+   background-image: url("../images/portadas/code.jpg");
+}
+
+
+
+*/
+
+/* -------------------------------------------
+basado en el modelo de:
+http://inspectelement.com/demos/css3/3dgallery/ 
+---------------------------------------------- */
+
+
+#informacion { z-index: 20; }
+#informacion h3,#informacion2 h3{
+  font-size: 30px;
+  color: #FFF;
+  padding: 20px;
+}
+
+#informacion p,#informacion2 p{
+margin-top: 9px;
+margin-left: 20px;
+margin-right: 20px;
+color: #fafafa;
+font-size: 17px;;
+}
+#informacion a{
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+}
+#informacion button, #informacion2 button{
+position: absolute;
+position: absolute;
+top: 0%;
+left: 96%;
+background-color: deepskyblue;
+width: 29px;
+border: none;
+height: 29px;
+border-radius: 81px;
+color: #fff;
+font-weight: 500;
+font-size: 15px;
+}
+#informacion button:hover, #informacion2 button:hover{
+  cursor: pointer;
+  background-color: deeppink;
+}
+
+
+/****/
+#bio{
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  height:100%;
+}
+
+.l{
+  float: left;
+}
+.r{
+  float: right;
+}
+
+.data{
+  position: relative;
+  width: 49%;
+  height: 100%;
+}
+.d{
+  margin: 0 auto;
+  position: relative;
+  
+
+}
+.d span{
+  position: relative;
+display: block;
+margin: 7px;
+font-size: 16px;
+font-weight: 500;
+}
+.d a{
+  color:#FF9900;
+}
+.d a:hover{
+  background: transparent;
+  color: #4518FF;
+}
+.photo{
+position: relative;
+
+height: 200px;
+background: #333;
+margin: 0 auto;
+border-radius: 5px;
+border: 5px solid #F69D7B;
+}
+
+.d, .photo{
+  width: 200px;
+}
+
+#olaf{
+  background: url('../images/data/olaf.jpg');
+  background-size: cover;
+}
+
+#john{
+  background: url('../images/data/john.jpg');
+  background-size: cover;
+}
+
+
+.photo > span{
+  position: relative;
+color: #fff;
+font-size: 21px;
+display: block;
+background: rgba(0, 0, 0, 0.63);
+top: 90%;
+height: 10%;
+text-align: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------------
+Using :target we can style the specific ID of the list item when clicked/tapped on eg: www.url.com/#info1
+---------------------------------------------------------------------------------------------------------------------------- */
+li[id]:target {
+ width: 100%;
+  height: 100%; 
+  opacity: 1;
+  z-index: 10;
+  position: absolute;
+  overflow-x: hidden; /* overflow-y: scroll; */ }
+
+/*contenedor de la cosa rara*/
+li[id]:target > div {
+position: relative;
+text-align: justify;
+margin: 0 auto;
+height: 100%;
+width: 60%;
+background: #222;background: rgba(0, 0, 0, 0.92);box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.52);
+}
+/* 
+Esconder la informacion de las listas */
+li[id] { overflow: hidden;
+ position: absolute;
+  width: 0;
+   height: 0; 
+   left: 0;
+   top: 0; 
+   opacity: 0; 
+   
+  
+}
+
+.co{
+  overflow-y: scroll;
+height: 74%;
+}
